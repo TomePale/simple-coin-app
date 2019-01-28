@@ -1,12 +1,14 @@
 const express = require('express');
 const axios = require('axios');
 const path = require('path');
+const history = require('connect-history-api-fallback');
 
 const app = express();
 
 app.set('port', process.env.PORT || 3000);
 
 if(process.env.NODE_ENV === 'production') {
+    app.use(history());
     app.use(express.static(path.join(__dirname, '/dist')));
 }
 
