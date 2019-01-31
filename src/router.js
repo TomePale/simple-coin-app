@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/views/home/HomePage.vue'
 import CoinDetailsPage from '@/views/coin-details/CoinDetailsPage'
-import AboutPage from '@/views/about/AboutPage'
 import NotFoundPage from '@/views/not-found/NotFoundPage'
 import store from '@/store';
 
@@ -41,11 +40,6 @@ export default new Router({
       component: CoinDetailsPage,
       props:true,
       beforeEnter: checkIfCoinExists
-    },
-    {
-      path: '/about',
-      name: 'AboutPage',
-      component: AboutPage
     },
     {
       path: '*',

@@ -3,7 +3,7 @@
     <router-link :to="'/currency/' + coin.slug" class="ui grid">
       <div class="one wide column segment__bold">{{coin.cmc_rank}}</div>
       <div class="two wide column segment__primary">
-        <img :src="`https://chasing-coins.com/api/v1/std/logo/${coin.symbol}`" class="segment__crypto-logo">
+        <img :src="`https://s2.coinmarketcap.com/static/img/coins/64x64/${coin.cmc_rank}.png`" class="segment__crypto-logo">
         {{coin.name}}
       </div>
       <div class="one wide column segment__bold">{{coin.symbol}}</div>

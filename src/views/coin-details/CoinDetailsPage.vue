@@ -1,7 +1,7 @@
 <template>
   <div class="ui grid dashboard" v-if="coin">
     <div class="sixteen wide column">
-      <img :src="`https://chasing-coins.com/api/v1/std/logo/${coin.symbol}`" />
+      <img :src="`https://s2.coinmarketcap.com/static/img/coins/128x128/${coin.cmc_rank}.png`" />
       <h1 class="ui header">{{coin.name}} <span>{{coin.symbol}}</span></h1>
       <a class="ui orange label">Rank {{coin.cmc_rank}}</a>
       <p class="dashboard__trading">Currently trading at
