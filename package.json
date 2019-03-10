@@ -7,7 +7,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "concurrently \"node server.js\" \"npm run serve\""
+    "dev": "concurrently \"node server.js\" \"npm run serve\"",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -30,5 +31,6 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.21"
-  }
+  },
+  "heroku-run-build-script": true
 }
