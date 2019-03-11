@@ -20,7 +20,7 @@
             label="name"
           >
             <template slot="option" slot-scope="option">
-              <img :src="`https://s2.coinmarketcap.com/static/img/coins/64x64/${option.cmc_rank}.png`" class="select__logo"/>
+              <img :src="`https://chasing-coins.com/api/v1/std/logo/${option.symbol}`" class="select__logo"/>
               <span class="select__name">{{ option.name }}</span>
             </template>
           </v-select>
