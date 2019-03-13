@@ -1,7 +1,7 @@
 <template>
   <div class="ui segment coin desktop">
     <router-link :to="'/currency/' + coin.slug" class="ui grid" id="mobile-view">
-      <div class="one wide column segment__bold">{{coin.cmc_rank}}</div>
+      <div id="rank" class="one wide column segment__bold">{{coin.cmc_rank}}</div>
       <div class="two wide column segment__primary">
         <img
           :src="`https://chasing-coins.com/api/v1/std/logo/${coin.symbol}`"

@@ -54,7 +54,7 @@
     display: none;
   } */
 
-  #market-cap, #circulating-supply, #change-perc-1, #change-perc-2 {
+  #rank, #market-cap, #circulating-supply, #change-perc-1, #change-perc-2 {
     display: none;
   }
 
