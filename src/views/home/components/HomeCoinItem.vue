@@ -20,10 +20,12 @@
         class="three wide column segment__primary"
       >{{formatNumber(coin.circulating_supply)}} {{coin.symbol}}</div>
       <div
+        id="change-perc-1"
         class="two wide column"
         :class="[isValuePositive(coinQuotes.percent_change_1h) ? 'segment__positive' : 'segment__negative']"
       >{{coinQuotes.percent_change_1h}} %</div>
       <div
+        id="change-perc-2"
         class="two wide column"
         :class="[isValuePositive(coinQuotes.percent_change_24h) ? 'segment__positive' : 'segment__negative']"
       >{{coinQuotes.percent_change_24h}} %</div>

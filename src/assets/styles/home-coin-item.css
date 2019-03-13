@@ -54,12 +54,12 @@
     display: none;
   } */
 
-  #market-cap, #circulating-supply {
+  #market-cap, #circulating-supply, #change-perc-1, #change-perc-2 {
     display: none;
   }
 
   #mobile-view {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .ui.segment.non-desktop {
