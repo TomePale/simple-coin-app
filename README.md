@@ -1,4 +1,4 @@
-# simple-coin
+# Simple Coin App
 
 ## Project setup
 ```
