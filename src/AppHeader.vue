@@ -1,7 +1,7 @@
 <template>
   <div class="ui top attached menu">
     <div class="item name">
-      SimpleCoinCap
+      Simple Coin App
     </div>
     <router-link
       to="/"
