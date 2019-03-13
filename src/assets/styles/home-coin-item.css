@@ -13,10 +13,10 @@
   width: 100.5%;
   margin: 0 -5px;
 
-  .segment__primary {
-    color: #ffa226 !important;
-  }
 }
+    /* .segment__primary {
+      color: #ffa226 !important;
+    } */
 
 .ui.segment .ui.grid {
   height: 60px;
@@ -50,8 +50,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  .ui.segment.desktop {
+  /* .ui.segment.desktop {
     display: none;
+  } */
+
+  #market-cap, #circulating-supply {
+    display: none;
+  }
+
+  #mobile-view {
+    justify-content: space-between;
   }
 
   .ui.segment.non-desktop {
